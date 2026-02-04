@@ -650,8 +650,11 @@ h1, h2, h3, h4, h5, h6 {
 
   .hero__illustration {
     width: 100%;
-    max-width: 400px;
+    max-width: 380px;
     margin: 0 auto;
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+    box-sizing: border-box;
   }
 
   .hero__illustration-ring,
@@ -693,8 +696,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .hero__illustration {
-    padding: var(--space-2);
-    max-width: 340px;
+    padding: 0 var(--space-4);
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .hero__illustration-card {
