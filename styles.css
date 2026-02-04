@@ -524,6 +524,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: var(--space-6);
   box-shadow: var(--shadow-md);
   transition: transform var(--transition-base), box-shadow var(--transition-base);
+  min-width: 0;
+  overflow: hidden;
 }
 
 .hero__illustration-card:hover {
@@ -663,6 +665,11 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
   }
 
+  .hero__illustration-card strong {
+    font-size: var(--font-size-base);
+    word-break: break-word;
+  }
+
   .hero__illustration-ring,
   .hero__illustration-ring--2 {
     display: none;
@@ -706,7 +713,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .hero__illustration {
-    max-width: 300px;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .hero__illustration-grid {
+    gap: var(--space-3);
   }
 
   .hero__illustration-card {
@@ -715,11 +727,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .hero__illustration-card span {
-    font-size: var(--font-size-xs);
+    font-size: 0.65rem;
   }
 
   .hero__illustration-card strong {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
+    word-break: break-word;
   }
 
   .pulse-dot {
