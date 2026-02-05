@@ -1284,7 +1284,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: var(--font-size-lg);
   font-weight: 700;
   color: var(--color-primary);
-  word-break: break-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding: var(--space-3) var(--space-4);
   background: var(--color-primary-bg);
   border-radius: var(--radius-md);
@@ -1306,7 +1308,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 480px) {
   .contact__email-link {
     font-size: var(--font-size-sm);
-    word-break: break-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
